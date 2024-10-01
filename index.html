@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yakuza - DSTAT</title>
+  <title>CyberHub Basic - DSTAT</title>
   <style>
     html,
     body {
@@ -121,7 +121,7 @@
 
       async function getData() {
         try {
-          const response = await fetch("/nginx_status", {
+          const response = await fetch("http://116.202.109.224/nginx_status", {
             method: "GET",
             cache: "no-cache",
           });
