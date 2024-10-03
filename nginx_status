@@ -2,16 +2,16 @@ server {
   listen 80;
 
   # The host name to respond to
-  server_name /nginx_status;
+  server_name http://wannabe1337x.github.io/l7_graph/nginx_status;
 
   location / {
-    root      /dstat;
+    root      /;
     index     index.html;
   }
 
   location /nginx_status {
     # Turn on stats
     stub_status on;
-    access_log off;
+    access_log on;
   }
 }
